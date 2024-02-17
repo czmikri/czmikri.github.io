@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/beston-free');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mr+Dafoe&display=swap');
 
 /* General Global Setting */
 * {
@@ -50,7 +52,7 @@ header.active {
   font-size: 40px;
   color: #111111;
   letter-spacing: 2px;
-  font-weight: 800;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -605,6 +607,16 @@ section p {
   width: 2px;
   background: #111111;
 }
+.team::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: 250px;
+  height: 100px;
+  width: 2px;
+  background: #111111;
+}
 .card-team{
   width: 350px;
   height: 480px;
@@ -873,9 +885,9 @@ section p {
   background: #ffffff;
 }
 
-.contact .info ion-icon {
-  font-size: 0.6em;
-  padding: 8px;
+.contact .info a {
+  font-size: 1.0em;
+  padding: 4px;
   color: var(--primary);
   float: left;
   width: 45px;
