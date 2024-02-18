@@ -42,10 +42,10 @@ rightArrow.addEventListener('click', () => {
 })
 
 function checkDirection(){
-    if (touchendX < touchstartX){
+    if (touchendX > touchstartX){
         leftArrow.click();
     }
-    if (touchendX > touchstartX){
+    if (touchendX < touchstartX){
         rightArrow.click();
     }
 }
