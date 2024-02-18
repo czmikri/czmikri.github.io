@@ -28,7 +28,7 @@
     <!-- Header -->
     <header>
       <a href="/" class="logo">Alice a Michal</a>
-      <a class="menu" onclick="toggleMenu();" href="#"
+      <a class="menu" onclick="toggleMenu();" href="menu"
         ><ion-icon class="open" name="menu-outline"></ion-icon
         ><ion-icon class="close" name="close-outline"></ion-icon>
       </a>
@@ -88,13 +88,13 @@
         <div class="content">
           <h1 class="animate__animated animate__fadeInUp">Svatba</h1>
           <p class="animate__animated animate__fadeInUp animate__delay-1s">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            mollitia nobis repellat fuga sit iste corrupti aut facilis, optio
-            neque culpa ex est eos non voluptate! Non incidunt eveniet ducimus,
-            suscipit modi ut iste sit hic libero unde aliquam! Eum veritatis
-            quisquam assumenda facilis nesciunt asperiores eius voluptatem
-            incidunt qui
+            Rozhodli jsme se společnou cestou jít, manželským slibem cestu lásky zpečetit.
           </p>
+          <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Kdy?</h2>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s">
+            7. září, 2024<br>
+            ve 13:00
+          </p>                
         </div>
         <div class="circle bg">
           <img src="./images/wedding-1.jpg" alt="" />
@@ -110,7 +110,13 @@
         <div class="content">
           <h1>Obřad</h1>
           <p>
-            Obřad proběhné v areálu Hotelu Lotrinský ve Velkých Pavlovicích. Jedná se revitalizovanou barokní sýpku z 18. století, která nás uhranula svým stylem, který kombinuje původní prvky s novodobými.
+            Své ano si řekneme v barokní sýpce z 18. století, která byla před pár zrekonstruována a upravena na hotel. 
+            Hotel vystihuje náš styl a stal se jasnou volbou pro náš velký den.
+          </p>
+          <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Kde?</h2>
+          <p>
+            Hotel Lotrinský,<br>
+            Velké Pavlovice
           </p>
         </div>
         <div class="circle bg">
@@ -125,20 +131,16 @@
       </div>
       <div class="bg-slide slide-3">
         <div class="content">
-          <h1>Honeymoon</h1>
+          <h1>Zásnuby</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            mollitia nobis repellat fuga sit iste corrupti aut facilis, optio
-            neque culpa ex est eos non voluptate! Non incidunt eveniet ducimus,
-            suscipit modi ut iste sit hic libero unde aliquam! Eum veritatis
-            quisquam assumenda facilis nesciunt asperiores eius voluptatem
-            incidunt qui
+            Naše zásnuby proběhly v Benátkách. Většina by čekala, že žádost o ruku se uskutečnila na gondole, popř. na nějakém jiném epickém místě. 
+            Realita však byla jiná a to hotelový pokoj. Na tento okamžik tak máme nejen hezkou, ale zároveň i usměvnou vzpomínku.
           </p>
         </div>
         <div class="circle bg">
           <img src="./images/wedding-3.jpg" alt="" />
           <div class="circle large">
-            <img src="./images/hotel.jpg" alt="" />
+            <img src="./images/wedding-3.jpg" alt="" />
             <div class="circle small">
               <img src="./images/wedding-3.jpg" alt="" />
             </div>
@@ -175,7 +177,7 @@
           </defs>
           <text font-size="17">
             <textPath xlink:href="#circle">
-              Vezmeš si mě?...Ano vezmu...
+              Vezmeš si mě?...Ano, vezmu...
             </textPath>
           </text>
         </svg>
@@ -190,7 +192,7 @@
       <section id="about" class="about">
         <div class="container">
           <div class="row">
-            <h1>O nas</h1>
+            <h1>O nás</h1>
           </div>
           <div class="row">
             <div class="col-lg-6">
@@ -229,110 +231,104 @@
         </div>
       </section>
       <!-- Services Section -->
+      <!-- Services Section -->
       <section id="services" class="services">
         <div class="container">
           <div class="row">
-            <h1>Our Services</h1>
+            <h1>Důležité informace</h1>
           </div>
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-4 d-flex justify-content-center">
-              <div class="card">
+          <!-- <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-2 d-flex justify-content-center"> -->
+              <div class="timeline-container">
+                <div class="timeline">
+                  <ul>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, do 12:30</h3>                    
+                          <h1>Příjezd hostů</h1>
+                          <img src="./images/podklady/Vehicle - Car HR (2).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 13:00</h3>
+                        <h1>Obřad</h1>
+                        <img src="./images/podklady/Arch HR (2).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 14:30</h3>
+                        <h1>Společné focení</h1>
+                        <img src="./images/podklady/Group Photo HR.png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 14:30</h3>
+                        <h1>Svatební hostina</h1>
+                        <img src="./images/podklady/Place Setting HR.png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 14:30</h3>
+                        <h1>Focení novomanželů</h1>
+                        <img src="./images/podklady/Camera HR.png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 14:30</h3>
+                        <h1>Krájení dortu</h1>
+                        <img src="./images/podklady/Cake HR (1).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 14:30</h3>
+                        <h1>První tanec</h1>
+                        <img src="./images/podklady/Dancing HR (1).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 14:30</h3>
+                        <h1>Házení kytice</h1>
+                        <img src="./images/podklady/Prep - Bride HR (1).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">sobota, 14:30</h3>
+                        <h1>Večerní zábava</h1>
+                        <img src="./images/podklady/Music HR (3).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">neděle, od 8:00</h3>
+                        <h1>Snídaně</h1>
+                        <img src="./images/podklady/Food HR (2).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">neděle, do 12:00</h3>
+                        <h1>Odjezd hostů</h1>
+                        <img src="./images/podklady/Vehicle - Car HR (1).png" alt="" height="50px" width="auto" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="card">
                 <div class="img-box">
                   <img src="./images/services-1.jpg" alt="" />
                 </div>
                 <div class="details">
-                  <h4>Wedding Plan</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Totam quibusdam rerum repudiandae deserunt cupiditate
-                    incidunt, distinctio quas molestiae fugit laudantium nisi
-                    nihil magni? Esse, aliquam corrupti! Perspiciatis dolorum
-                    tempora maiores!
-                  </p>
-                  <a class="section-btn" href="#">Discover more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 d-flex justify-content-center">
-              <div class="card">
-                <div class="img-box">
-                  <img src="./images/services-2.jpg" alt="" />
-                </div>
-                <div class="details">
-                  <h4>Ceremony</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Totam quibusdam rerum repudiandae deserunt cupiditate
-                    incidunt, distinctio quas molestiae fugit laudantium nisi
-                    nihil magni? Esse, aliquam corrupti! Perspiciatis dolorum
-                    tempora maiores!
-                  </p>
-                  <a class="section-btn" href="#">Discover more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 d-flex justify-content-center">
-              <div class="card">
-                <div class="img-box">
-                  <img src="./images/services-3.jpg" alt="" />
-                </div>
-                <div class="details">
-                  <h4>Honeymoon</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Totam quibusdam rerum repudiandae deserunt cupiditate
-                    incidunt, distinctio quas molestiae fugit laudantium nisi
-                    nihil magni? Esse, aliquam corrupti! Perspiciatis dolorum
-                    tempora maiores!
-                  </p>
-                  <a class="section-btn" href="#">Discover more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-            <!-- Services Section -->
-      <section id="services" class="services">
-        <div class="container">
-          <div class="row">
-            <h1>Dulezite informace</h1>
-          </div>
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-4 d-flex justify-content-center">
-              <div class="card">
-                <div class="img-box">
-                  <img src="./images/services-1.jpg" alt="" />
-                </div>
                   <h4>Svatební program</h4>
-                  <div class="timeline">
-                    <ul>
-                      <li>
-                        <div class="timeline-content">
-                          <h3 class="date">sobota, do 12:30</h3>
-                          <h1>Prijezd</h1>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="timeline-content">
-                          <h3 class="date">sobota, 13:00</h3>
-                          <h1>Obrad</h1>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="timeline-content">
-                          <h3 class="date">sobota, do 12:30</h3>
-                          <h1>Foceni</h1>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="timeline-content">
-                          <h3 class="date">sobota, 13:00</h3>
-                          <h1>Hostina</h1>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 d-flex justify-content-center">
@@ -369,16 +365,16 @@
                   </p>
                   <a class="section-btn" href="#">Discover more</a>
                 </div>
-              </div>
-            </div>
-          </div>
+              </div> 
+            </div> 
+          </div>-->
         </div>
       </section>
       <!-- Team Section -->
       <section id="team" class="team">
         <div class="container">
           <div class="row">
-            <h1>Svatebni tym</h1>
+            <h1>Svatební tým</h1>
           </div>
           <div class="row d-flex justify-content-center align-items-center">
             <div class="col-lg-4 d-flex justify-content-center" style="margin-top: 20px">
@@ -437,7 +433,7 @@
                 </div>
                 <div class="card-team-content">
                   <h2> Jan Konečný</h2>
-                  <h3> DJ & Moderátor</h3>
+                  <h3> Hudba</h3>
                   <p>
                     „Hanny je velká voda a neřízená střela,“ říkají kolegové. „Vždy a všude chodím dřív, jsem veselý a postavím se za každou špatnost". 
                   </p>
@@ -474,7 +470,7 @@
           </div>
         </div>
       </section>
-      <!-- Portfolio Section -->
+      <!-- Gallery Section -->
       <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="row">
@@ -488,222 +484,7 @@
           </ul> -->
 
           <!-- <div class="row portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Wedding Planning 1</h4>
-                <p>Wedding Planning</p>
-                <a
-                  href="./images/portfolio/portfolio-1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Wedding Planning 1"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-honeymoon">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Honeymoon 3</h4>
-                <p>Honeymoon</p>
-                <a
-                  href="./images/portfolio/portfolio-2.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Honeymoon 3"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Wedding Planning 2</h4>
-                <p>Wedding Planning</p>
-                <a
-                  href="./images/portfolio/portfolio-3.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Wedding Planning 2"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-ceremony">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Ceremony 2</h4>
-                <p>Ceremony</p>
-                <a
-                  href="./images/portfolio/portfolio-4.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Ceremony 2"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-honeymoon">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-5.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Honeymoon 2</h4>
-                <p>Honeymoon</p>
-                <a
-                  href="./images/portfolio/portfolio-5.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Honeymoon 2"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-6.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Wedding Planning 3</h4>
-                <p>Wedding Planning</p>
-                <a
-                  href="./images/portfolio/portfolio-6.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Wedding Planning 3"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-ceremony">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-7.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Ceremony 1</h4>
-                <p>Ceremony</p>
-                <a
-                  href="./images/portfolio/portfolio-7.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Ceremony 1"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-ceremony">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-8.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Ceremony 3</h4>
-                <p>Ceremony</p>
-                <a
-                  href="./images/portfolio/portfolio-8.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Ceremony 3"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-honeymoon">
-              <div class="portfolio-img">
-                <img
-                  src="./images/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="portfolio-info">
-                <h4>Honeymoon 3</h4>
-                <p>Honeymoon</p>
-                <a
-                  href="./images/portfolio/portfolio-9.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Honeymoon 3"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
-              </div>
-            </div>
-          </div> -->
+      <!-->
           <div class="popup">
             <div class="top-bar">
               <p class="image-name">portfolio-1.jpg</p>
