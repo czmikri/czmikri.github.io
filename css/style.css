@@ -996,16 +996,19 @@ section p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 50px 0;
+  left: 50%;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .timeline {
-  width: 80%;
+  width: 100%;
   height: auto;
   max-width: 800px;
-  margin: 0 auto;
+  margin-top: -30px;
+  margin-left: -30px;
+  margin-bottom: -30px;
   position: relative;
 }
 
@@ -1013,11 +1016,11 @@ section p {
   list-style: none;
 }
 .timeline ul li {
-  padding: 20px;
+  padding: 10px;
   background: #ffffff;
   color: white;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .timeline ul li:last-child {
@@ -1029,12 +1032,15 @@ section p {
   margin-bottom: 10px;
   font-family: "Ephesis", cursive;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 0.8em;
 }
 .timeline-content p {
-  font-size: 16px;
-  line-height: 30px;
+  color: #000;
+  text-align: left;
+  margin: 0px;
+  font-family: "Ephesis", cursive;
   font-weight: 300;
+  font-size: 1.6em;
 }
 .timeline-content .date {
   color: #000;
@@ -1044,6 +1050,15 @@ section p {
   letter-spacing: 2px;
 }
 @media only screen and (min-width: 768px) {
+  .timeline {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin-top: 0px;
+    margin-left: -30px;
+    margin-bottom: 0px;
+    position: relative;
+  }
   .timeline:before {
     content: "";
     position: absolute;
@@ -1052,7 +1067,7 @@ section p {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: #000;
+    background-color: gray;
   }
   .timeline ul li {
     width: 50%;
@@ -1077,7 +1092,7 @@ section p {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: gray;
     top: 0px;
   }
   .timeline ul li:nth-child(odd)::before {
@@ -1090,7 +1105,7 @@ section p {
   }
   .timeline-content .date {
     position: absolute;
-    top: -30px;
+    top: -20px;
   }
   .timeline ul li:hover::before {
     background-color: #ff0066;
