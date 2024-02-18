@@ -765,7 +765,16 @@ section p {
 .portfolio h1 {
   margin-bottom: 50px;
 }
-
+.portfolio::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: 250px;
+  height: 100px;
+  width: 2px;
+  background: #111111;
+}
 .portfolio #portfolio-filters {
   list-style: none;
   margin-bottom: 20px;
@@ -1073,6 +1082,8 @@ section p {
   height: 90vh;
   max-width: 1600px;
   max-height: 800px;
+  margin-top: 10vh;
+  left: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
