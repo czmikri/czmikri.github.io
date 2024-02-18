@@ -1167,8 +1167,8 @@ section p {
   padding: 20px;
   border-radius: 50%;
   border: none;
-  background: none;
   cursor: pointer;
+  background: none;
 }
 .left-arrow{
   left: 10px;
@@ -1184,7 +1184,7 @@ section p {
 .index{
   font-family: 'Great Vibes', cursive;
   font-weight: 600;
-  font-size: 5em;
+  font-size: 2em;
   position: absolute;
   bottom: -5vh;
   right: 20px;
@@ -1192,12 +1192,11 @@ section p {
   opacity: 0;
 }
 .large-image{
-  margin-top: 5%;
-  width: 80%;
-  height: 80%;
+  margin-top: 2%;
+  width: 85%;
+  height: 85%;
   object-fit: contain;
   opacity: 0;
-
 }
 /*--------------------------------------------------------------
 # Responsive Design
@@ -1209,6 +1208,14 @@ section p {
   }
   .popup{
     height: 60vh;
+  }
+  .gallery-image{
+    width: 30%;
+    height: calc(30%-20px);
+    margin: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    overflow: hidden;
   }
   .arrow-btn{
     padding: 0px;
