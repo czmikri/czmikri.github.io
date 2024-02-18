@@ -8,6 +8,8 @@ const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
 let index = 0;
+let touchstartX = 0;
+let touchendX = 0;
 
 images.forEach((item, i) => {
     item.addEventListener('click', () => {
@@ -37,4 +39,21 @@ rightArrow.addEventListener('click', () => {
     if (index < images.length - 1){
         updateImage(index + 1);
     }
+})
+
+function checkDirection(){
+    if (touchendX < touchstartX){
+        leftArrow.click();
+    }
+    if (touchendX > touchstartX){
+        rightArrow.click();
+    }
+}
+largeImage.addEventListener("touchstart", (e) => {
+    touchstartX = e.changedTouches[0].screenX;
+})
+
+largeImage.addEventListener("touchend", (e) => {
+    touchendX = e.changedTouches[0].screenX;
+    checkDirection();
 })
