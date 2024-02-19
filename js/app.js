@@ -42,10 +42,10 @@ rightArrow.addEventListener('click', () => {
 })
 
 function checkDirection(){
-    if (touchendX > touchstartX){
+    if (touchendX < touchstartX){
         leftArrow.click();
     }
-    if (touchendX < touchstartX){
+    if (touchendX > touchstartX){
         rightArrow.click();
     }
 }
@@ -57,3 +57,24 @@ largeImage.addEventListener("touchend", (e) => {
     touchendX = e.changedTouches[0].screenX;
     checkDirection();
 })
+
+const btn = document.getElementById('btn-form');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Posílám...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_dw84kcw';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Pošli zprávu';
+      alert('Posláno!');
+    }, (err) => {
+      btn.value = 'Pošli zprávu';
+      alert(JSON.stringify(err));
+    });
+});
