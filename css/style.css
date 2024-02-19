@@ -265,7 +265,7 @@ header.active {
 }
 
 .bg-slide .content p {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 2.5em;
   letter-spacing: 1px;
 }
@@ -602,7 +602,38 @@ section p {
   z-index: 100;
   pointer-events: none;
 }
+/*--------------------------------------------------------------
+# Accommodation Section
+--------------------------------------------------------------*/
+.accommodation h4::first-letter {
+  color: var(--primary);
+  font-size: 2em;
+}
 
+.accommodation::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: 250px;
+  height: 100px;
+  width: 2px;
+  background: #111111;
+}
+.accommodation .img-box {
+  position: relative;
+}
+
+.accommodation .img-box img {
+  max-width: 450px;
+}
+
+.accommodation .img-box .corner-img {
+  position: absolute;
+  width: 15vw;
+  right: 10px;
+  bottom: -50px;
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
