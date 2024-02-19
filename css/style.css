@@ -635,6 +635,19 @@ section p {
   bottom: -50px;
 }
 /*--------------------------------------------------------------
+# Countdown Section
+--------------------------------------------------------------*/
+.launch-time{
+  display: flex;
+}
+.launch-time div{
+  flex-basis: 7vw;
+}
+.launch-time p{
+  font-size: 0.8em;
+  font-weight: 400;
+}
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services::before {
@@ -955,9 +968,10 @@ section p {
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 1.6em;
-  font-weight: 600;
   margin-bottom: 6px;
   color: #111111;
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
 }
 
 .contact .info p {
@@ -1338,6 +1352,7 @@ section p {
 
   .bg-slide .content p {
     font-size: 1.2em;
+    font-weight: 400;
   }
 
   .circle.bg {
