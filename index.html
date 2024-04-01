@@ -179,8 +179,8 @@
         </li>
       </ul>
       <div class="share animate__animated animate__fadeInLeft">
-        <p id="share_text">share</p>
-        <ion-icon id="share_icon" name="share-social-outline"></ion-icon>
+        <p id="share_text" onclick="shareMethod()">share</p>
+        <ion-icon id="share_icon" onclick="shareMethod()" name="share-social-outline"></ion-icon>
       </div>
 
       <div class="lead animate__animated animate__fadeInUp">
@@ -788,24 +788,47 @@
     <script src="./js/main.js"></script>
     <script src="./js/app.js"></script>
 
+    <!-- <script>
+      document.addEventListener('DOMContent-Loaded', function(){
+        const shareTxt = document.getElementById('share_text');
+        if (shareTxt){
+          shareTxt.addEventListener('click', shareTxt);
+        }
+        else
+        {
+          console.error('Share element not found.');
+        }
+      });
+    </script> -->
     <script>
-      const shareTxt = document.getElementById('share_txt')
-      const shareIcon = document.getElementById('share_icon')
-
-      if (navigator.share){
-        shareTxt.addEventListener('click', () => {
-          navigator.share({
-            title: "Křístkovi svatební web",
-            text: "Svatební web, kde můžete najít informace o tom, co vás čeká a nemine na svatbě Alice & Michala",
-            url: 'https://czmikri.github.io/'
-          })
-          .then(() => console.log('Successful share'))
-          .catch(() => console.log('Error sharing', error));
-        });
-      }
-      else {
-        shareIcon.style.display = 'none';
-        shareTxt.style.display = 'none';
+      function shareMethod(){
+        const shareTxt = document.getElementById('share_text')
+        const shareIcon = document.getElementById('share_icon')
+  
+        if (navigator.share){
+          shareTxt.addEventListener('click', () => {
+            navigator.share({
+              title: "Křístkovi svatební web",
+              text: "Svatební web, kde můžete najít informace o tom, co vás čeká a nemine na svatbě Alice & Michala",
+              url: 'https://czmikri.github.io/'
+            })
+            .then(() => console.log('Successful share'))
+            .catch(() => console.log('Error sharing', error));
+          });
+          shareIcon.addEventListener('click', () => {
+            navigator.share({
+              title: "Křístkovi svatební web",
+              text: "Svatební web, kde můžete najít informace o tom, co vás čeká a nemine na svatbě Alice & Michala",
+              url: 'https://czmikri.github.io/'
+            })
+            .then(() => console.log('Successful share'))
+            .catch(() => console.log('Error sharing', error));
+          });
+        }
+        else {
+          shareIcon.style.display = 'none';
+          shareTxt.style.display = 'none';
+        }
       }
     </script>
     <!-- <script>
